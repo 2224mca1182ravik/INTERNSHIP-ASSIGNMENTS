@@ -1,63 +1,103 @@
-*{
-	padding:0;
-	margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/*	general	*/
-
-section{
-    padding: 50px 0;
+body {
+  background-image: url(https://wallpapercave.com/wp/wp9119155.jpg);
+  background-size: cover;
 }
 
-/*	gallery */
-
-.gallery-title{
-    font-size: 36px;
-    color: #3F6184;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-.filter-button{
-    font-size: 18px;
-    border: 2px solid #3F6184;
-	padding:5px 10px;
-    text-align: center;
-    color: #3F6184;
-    margin-bottom: 30px;
-	background:transparent;
-}
-.filter-button:hover,
-.filter-button:focus,
-.filter-button.active{
-    color: #ffffff;
-    background-color:#3F6184;
-	outline:none;
-}
-.gallery_product{
-    margin: 0px;
-	padding:0;
-	position:relative;
-}
-.gallery_product .img-info{
-	position: absolute;
-    background: rgba(0,0,0,0.5);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 20px;
-	overflow:hidden;
-	color:#fff;
-	top:0;
-	display:none;
-	   -webkit-transition: 2s;
-    transition: 2s;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.gallery_product:hover .img-info{
-	display:block;
-   -webkit-transition: 2s;
-    transition: 2s;
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
 }
 
-/*	end gallery */
+.input-container input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin-block: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-container input[type="text"] {
+  width: 70%;
+}
+
+.input-container input[type="button"] {
+  background-color: #3da33d;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover {
+  background-color: #60b160;
+}
+
+ul {
+  width: 70%;
+  max-width: 450px;
+  /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+  margin-block-end: 12px;
+  border-radius: 8px;
+  border: 0.125px solid #a19f9f;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s;
+}
+
+ul li:hover {
+  background-color: #cbcaca;
+}
+
+ul li p {
+  flex-grow: 1;
+  padding: 2px;
+}
+.btn {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.deleteBtn {
+  color: #ff0000;
+}
+
+.editBtn {
+  color: #008000;
+}
